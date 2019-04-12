@@ -1,0 +1,1 @@
+"use strict";new Swiper(".content",{pagination:{el:".page",clickable:!0}});

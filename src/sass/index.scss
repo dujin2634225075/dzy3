@@ -1,0 +1,121 @@
+@import"common";
+@import"minix";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: pxTorem(12px);
+}
+
+.header {
+    width: 100%;
+    height: pxTorem(60px);
+    line-height: pxTorem(60px);
+    display: flex;
+    align-items: center;
+    span {
+        width: pxTorem(100px);
+        text-align: center;
+        display: inline-block;
+    }
+    input {
+        flex: 1;
+        height: pxTorem(30px);
+        line-height: pxTorem(30px);
+        text-align: center;
+        border: 1px solid #aaa;
+        border-radius: pxTorem(10px);
+    }
+}
+
+.main {
+    width: 100%;
+    height: pxTorem(300px);
+    .banner {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        width: 100%;
+        .slide {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: pxTorem(10px);
+            text-align: center;
+            dl {
+                width: 20%;
+                text-align: center;
+                flex-shrink: 0;
+                margin: pxTorem(10px) 0;
+                dt {
+                    width: 80%;
+                    img {
+                        width: 80%;
+                    }
+                }
+                dd {
+                    width: 80%;
+                }
+            }
+        }
+        .page span {
+            width: pxTorem(10px);
+            height: pxTorem(10px);
+            border-radius: 50%;
+            margin: pxTorem(5px);
+        }
+    }
+}
+
+.list {
+    flex: 1;
+    overflow: scroll;
+    h2 {
+        width: 100%;
+        height: pxTorem(40px);
+        line-height: pxTorem(40px);
+        font-weight: 600;
+    }
+    dl {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: pxTorem(10px);
+        dt {
+            width: 30%;
+            img {
+                width: 100%;
+            }
+        }
+        dd {
+            width: 70%;
+            margin-left: pxTorem(10px);
+            p {
+                margin: pxTorem(10px);
+            }
+            div {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
